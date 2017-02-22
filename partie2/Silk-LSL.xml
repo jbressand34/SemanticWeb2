@@ -1,0 +1,48 @@
+<Silk>
+        <Prefixes>
+            <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#" />
+            <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+        </Prefixes>
+        
+        <DataSources>
+            <DataSource id="insee">
+                <Param name="endpointURI" value="http://id.insee.fr/sparql/" />
+            </DataSource>
+            <DataSource id="ign">
+                <Param name="endpointURI" value="http://data.ign.fr/id/sparql/" />
+            </DataSource>
+        </DataSources>
+        
+        <Blocking blocks="100" />
+        
+        <Interlinks>
+            <Interlink>
+		<LinkType>owl:sameAs</LinkType>
+
+		<SourceDataset dataSource="insee" var="a">
+		</SourceDataset>
+		<TargetDataset dataSource="ign" var="b">
+		</TargetDataset>
+
+		<LinkageRule>
+			<Compare metric="levenshteinDistance" threshold="1">
+				<Input path="?a/rdfs:label"/>
+				<Input path="?b/rdfs:label"/>
+			</Compare>
+		</LinkageRule>
+
+
+		<Outputs>
+        		<Output type="file" minConfidence="0.95">
+          			<Param name="file" value="accepted_links.nt" />
+          			<Param name="format" value="ntriples" />
+        		</Output>
+        		<Output type="file" maxConfidence="0.95">
+          			<Param name="file" value="verify_links.nt" />
+          			<Param name="format" value="alignment" />
+        		</Output>
+      		</Outputs>
+            </Interlink>
+        </Interlinks>
+        
+</Silk>
