@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+       xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+       xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+       xmlns:ns0='http://exmo.inrialpes.fr/align/ext/1.0/'
+       xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+  <head><title>Alignment</title><style type="text/css">body {font-family: sans-serif}</style></head>
+  <body>
+  <div typeof="align:Alignment">
+      <h1>Anonymous alignment</h1>
+      <table border="0">
+        <tr><td>onto1</td><td><div rel="align:onto1"><div typeof="align:Ontology" about="http://cmt">
+          <table>
+            <tr><td>uri: </td><td>http://cmt</td></tr>
+            <tr><td><span property="align:location" content="file:./cmt.owl.rdf"/>file:</td><td><a href="file:./cmt.owl.rdf">file:./cmt.owl.rdf</a></td></tr>
+            <tr><td>type:</td><td><span rel="align:formalism"><span typeof="align:Formalism"><span property="align:name">OWL2.0</span><span property="align:uri" content="http://www.w3.org/2002/07/owl#"/></span></span></td></tr>
+          </table>
+        </div></div></td></tr>
+        <tr><td>onto2</td><td><div rel="align:onto2"><div typeof="align:Ontology" about="http://ekaw">
+          <table>
+            <tr><td>uri: </td><td>http://ekaw</td></tr>
+            <tr><td><span property="align:location" content="file:./ekaw.owl.rdf"/>file:</td><td><a href="file:./ekaw.owl.rdf">file:./ekaw.owl.rdf</a></td></tr>
+            <tr><td>type:</td><td><span rel="align:formalism"><span typeof="align:Formalism"><span property="align:name">OWL2.0</span><span property="align:uri" content="http://www.w3.org/2002/07/owl#"/></span></span></td></tr>
+          </table>
+        </div></div></td></tr>
+        <tr><td>level</td><td property="align:level">0</td></tr>
+        <tr><td>type</td><td property="align:type">?*</td></tr>
+        <tr><td>http://exmo.inrialpes.fr/align/ext/1.0/ : method</td><td property="ns0:method">fr.inrialpes.exmo.align.impl.method.StringDistAlignment</td></tr>
+        <tr><td>http://exmo.inrialpes.fr/align/ext/1.0/ : time</td><td property="ns0:time">63</td></tr>
+      </table>
+      <h2>Correspondences (6)</h2>
+      <div rel="align:map">
+        <table>
+          <tr><td>object1</td><td>relation</td><td>strength</td><td>object2</td><td>Id</td></tr>
+          <tr typeof="align:Cell"><td rel="align:entity1" href="http://cmt#Document">http://cmt#Document</td><td property="align:relation">=</td><td property="align:measure" datatype="xsd:float">1.0</td><td rel="align:entity2" href="http://ekaw#Document">http://ekaw#Document</td><td></td></tr>
+          <tr typeof="align:Cell"><td rel="align:entity1" href="http://cmt#Person">http://cmt#Person</td><td property="align:relation">=</td><td property="align:measure" datatype="xsd:float">1.0</td><td rel="align:entity2" href="http://ekaw#Person">http://ekaw#Person</td><td></td></tr>
+          <tr typeof="align:Cell"><td rel="align:entity1" href="http://cmt#writtenBy">http://cmt#writtenBy</td><td property="align:relation">=</td><td property="align:measure" datatype="xsd:float">1.0</td><td rel="align:entity2" href="http://ekaw#writtenBy">http://ekaw#writtenBy</td><td></td></tr>
+          <tr typeof="align:Cell"><td rel="align:entity1" href="http://cmt#Review">http://cmt#Review</td><td property="align:relation">=</td><td property="align:measure" datatype="xsd:float">1.0</td><td rel="align:entity2" href="http://ekaw#Review">http://ekaw#Review</td><td></td></tr>
+          <tr typeof="align:Cell"><td rel="align:entity1" href="http://cmt#Paper">http://cmt#Paper</td><td property="align:relation">=</td><td property="align:measure" datatype="xsd:float">1.0</td><td rel="align:entity2" href="http://ekaw#Paper">http://ekaw#Paper</td><td></td></tr>
+          <tr typeof="align:Cell"><td rel="align:entity1" href="http://cmt#Conference">http://cmt#Conference</td><td property="align:relation">=</td><td property="align:measure" datatype="xsd:float">1.0</td><td rel="align:entity2" href="http://ekaw#Conference">http://ekaw#Conference</td><td></td></tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
